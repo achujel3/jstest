@@ -11,15 +11,15 @@ emp2.gender = "M";
 emp2.designation = "Artist";
 
 function createEmployee(firstName, lastName, gender, designation) {
-    var returnNewEmployee = {};
-    returnNewEmployee.firstName = firstName;
-    returnNewEmployee.lastName = lastName;
-    returnNewEmployee.gender = gender;
-    returnNewEmployee.designation = designation;
-    return returnNewEmployee;
+
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.gender = gender;
+    this.designation = designation;
+
 }
 
-var emp3 = createEmployee("Tom", "Lenich", "M", "Develoepr");
+var emp3 = new createEmployee("Tom", "Lenich", "M", "Develoepr");
 
 console.log(emp1);
 console.log(emp2);
