@@ -10,7 +10,7 @@ emp2.lastName = "Bowie";
 emp2.gender = "M";
 emp2.designation = "Artist";
 
-function createEmployee(firstName, lastName, gender, designation) {
+function Employee(firstName, lastName, gender, designation) {
 
     this.firstName = firstName;
     this.lastName = lastName;
@@ -19,7 +19,7 @@ function createEmployee(firstName, lastName, gender, designation) {
 
 }
 
-var emp3 = new createEmployee("Tom", "Lenich", "M", "Develoepr");
+var emp3 = new Employee("Tom", "Lenich", "M", "Develoepr");
 
 console.log(emp1);
 console.log(emp2);
