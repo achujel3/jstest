@@ -1,17 +1,8 @@
-var a = 10;
-
-console.log("Executing...");
-
-var fn = function() {
-    console.log(a);
-    console.log("Done");
-};
-
-setTimeout(fn, 3000);
+// making objects private/public:
 
 function createPerson() {
-    var fistName;
-    var lastName;
+    var firstName = "Bob";
+    var lastName = "Dylan";
     var returnObejct = {
         "getFirstName": function() {
             return firstName;
@@ -28,3 +19,10 @@ function createPerson() {
     }
     return returnObejct;
 }
+
+var person = createPerson();
+
+console.log(person.firstName);
+console.log(person.lastName);
+console.log(person.getFirstName());
+console.log(person.getLastName());
